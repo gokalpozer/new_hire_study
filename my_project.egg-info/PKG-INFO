@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: my_project
+Version: 1.0
+Requires-Dist: transformers==4.38.0
+Requires-Dist: pyyaml==6.0
+Requires-Dist: aiofiles==23.1.0
+Requires-Dist: asyncpg==0.28.0
+Requires-Dist: tensorflow==2.13.0
+Requires-Dist: psycopg2==2.9.10

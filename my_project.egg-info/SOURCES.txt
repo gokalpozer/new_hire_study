@@ -1,0 +1,17 @@
+README.md
+setup.py
+config/__init__.py
+config/settings.yaml
+data/__init__.py
+data/iphone.json
+my_project.egg-info/PKG-INFO
+my_project.egg-info/SOURCES.txt
+my_project.egg-info/dependency_links.txt
+my_project.egg-info/entry_points.txt
+my_project.egg-info/requires.txt
+my_project.egg-info/top_level.txt
+resources/__init__.py
+resources/zero_shot_model.py
+src/__init__.py
+src/insert.sql
+src/main.py

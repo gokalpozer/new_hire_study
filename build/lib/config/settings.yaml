@@ -1,0 +1,6 @@
+model:
+  name: "facebook/bart-large-mnli"
+logging:
+  level: "INFO"
+database:
+  connection_string: "postgresql://postgres:password123@localhost:5432/logs"

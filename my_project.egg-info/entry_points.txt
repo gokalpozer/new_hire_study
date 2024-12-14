@@ -1,0 +1,2 @@
+[console_scripts]
+run-my-project = src.main:run
