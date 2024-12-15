@@ -3,7 +3,6 @@ import yaml
 import asyncio
 from resources.zero_shot_model import ZeroShotClassifier
 import os
-import aiofiles
 import importlib.resources
 import time
 
