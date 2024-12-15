@@ -5,6 +5,7 @@ from resources.zero_shot_model import ZeroShotClassifier
 import os
 import aiofiles
 import importlib.resources
+import time
 
 
 async def log_to_db(connection_string, data):
@@ -78,8 +79,10 @@ async def main():
         with open(data_path, "r") as f:
             conversation = json.load(f)
 
+    start_time = time.time()
+
     candidate_labels = ["positive", "negative", "neutral"]
-    intents = ["buy", "upgrade", "change_package", "ask_information", "to_inform", "greeting"]
+    intents = ["buy", "upgrade", "information", "greeting", "confirm", "decline", "choose"]
 
     results = []
     for step in conversation["conversation"]:
@@ -92,6 +95,8 @@ async def main():
             "intention": intent["labels"][0],
             "message": text
         })
+    end_time = time.time()
+    print(f"Prediction Time: {end_time - start_time:.2f} seconds")
 
     # Log Results
     await log_to_db(config["database"]["connection_string"], results)
