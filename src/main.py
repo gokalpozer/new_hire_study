@@ -81,7 +81,22 @@ async def main():
     start_time = time.time()
 
     candidate_labels = ["positive", "negative", "neutral"]
-    intents = ["buy", "upgrade", "information", "greeting", "confirm", "decline", "choose"]
+    intents = [
+        "greet customer",
+        "thank customer",
+        "ask about product features",
+        "ask about storage options",
+        "ask about warranty or service plans",
+        "describe product features",
+        "offer product options",
+        "explain service plans",
+        "choose product variant",
+        "choose payment option",
+        "confirm purchase",
+        "confirm service addition",
+        "decline additional services",
+        "end conversation"]
+
 
     results = []
     for step in conversation["conversation"]:
