@@ -83,7 +83,7 @@ Handles the primary workflow, including:
 - Performing sentiment and intent predictions.
 - Logging results to the PostgreSQL database.
 
-**Enhancement**: We send both 'speaker' and 'message' in this format: `'speaker' + ': ' + 'message' to increase its performance on intent classification.
+**Enhancement**: Sends both 'speaker' and 'message' in this format: `'speaker' + ': ' + 'message' to increase its performance on intent classification.
 
 
 ### 2. `src/insert.sql`
@@ -109,7 +109,7 @@ Contains configurations for:
 Implements the zero-shot classification using the Hugging Face `transformers` library.
 
 ### 5. `data/iphone.json`
-A sample dataset of conversational exchanges used for analysis.
+A sample dataset of conversational exchanges used for analysis, created using ChatGPT.
 
 ```json
 {
