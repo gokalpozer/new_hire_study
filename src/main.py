@@ -100,14 +100,14 @@ async def main():
 
     results = []
     for step in conversation["conversation"]:
-        text = step["message"]
+        text = step["speaker"] + ": " + step["message"]
         sentiment = classifier.predict(text, candidate_labels)
         intent = classifier.predict(text, intents)
         results.append({
             "speaker": step["speaker"],
             "sentiment": sentiment["labels"][0],
             "intention": intent["labels"][0],
-            "message": text
+            "message": step["message"]
         })
     end_time = time.time()
     print(f"Prediction Time: {end_time - start_time:.2f} seconds")
