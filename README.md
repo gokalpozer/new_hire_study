@@ -111,20 +111,16 @@ Implements the zero-shot classification using the Hugging Face `transformers` li
 ### 5. `data/iphone.json`
 A sample dataset of conversational exchanges used for analysis.
 
-\```json
+```json
 {
   "conversation": [
     {
       "speaker": "Salesman",
       "message": "Hello! Welcome to our store. How can I assist you today?"
-    },
-    {
-      "speaker": "Customer",
-      "message": "Hi! I’m interested in buying a new iPhone."
     }
-// goes on
+  ]
 }
-\```
+```
 
 ---
 
